@@ -84,7 +84,7 @@ class Interstate {
 	
 	public function getAccessToken( $code, $type = 'authorization_code', $setToken = true ) {
 
-		$uri	= self::API_URI . 'v1/oauth2/token';
+		$uri	= self::API_URL . 'v1/oauth2/token';
 		$post	= array(
 			
 			'redirect_uri'	=> $this->_redirectUri,
